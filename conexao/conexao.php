@@ -2,7 +2,7 @@
 class Conexao {        
         
         public function __construct() {
-            $this->conexao = new PDO('pgsql:host=serprosdr-psc01;dbname=kapoeira_dev', "postgres", "");
+            $this->conexao = new PDO('pgsql:host=localhost;dbname=kapoeira', "postgres", "");
             $this->sth = null;
         }
         

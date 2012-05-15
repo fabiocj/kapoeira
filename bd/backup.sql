@@ -1,4 +1,4 @@
---
+﻿--
 -- PostgreSQL database dump
 --
 
@@ -16,10 +16,10 @@ SET escape_string_warning = off;
 -- Name: kapoeira; Type: DATABASE; Schema: -; Owner: kapoeira
 --
 
-CREATE DATABASE kapoeira WITH TEMPLATE = template0 ENCODING = 'UTF8';
+-- CREATE DATABASE kapoeira WITH TEMPLATE = template0 ENCODING = 'UTF8';
 
 
-ALTER DATABASE kapoeira OWNER TO kapoeira;
+ALTER DATABASE kapoeira OWNER TO postgres;
 
 SET statement_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -43,7 +43,7 @@ CREATE SEQUENCE seq_atividades
     CACHE 1;
 
 
-ALTER TABLE public.seq_atividades OWNER TO kapoeira;
+ALTER TABLE public.seq_atividades OWNER TO postgres;
 
 SET default_tablespace = '';
 
@@ -69,7 +69,7 @@ CREATE TABLE atividades (
 );
 
 
-ALTER TABLE public.atividades OWNER TO kapoeira;
+ALTER TABLE public.atividades OWNER TO postgres;
 
 --
 -- TOC entry 114 (class 1259 OID 244458)
@@ -84,7 +84,7 @@ CREATE SEQUENCE seq_esforco
     CACHE 1;
 
 
-ALTER TABLE public.seq_esforco OWNER TO kapoeira;
+ALTER TABLE public.seq_esforco OWNER TO postgres;
 
 --
 -- TOC entry 112 (class 1259 OID 244327)
@@ -98,7 +98,7 @@ CREATE TABLE esforco (
 );
 
 
-ALTER TABLE public.esforco OWNER TO kapoeira;
+ALTER TABLE public.esforco OWNER TO postgres;
 
 --
 -- TOC entry 109 (class 1259 OID 244261)
@@ -113,7 +113,7 @@ CREATE SEQUENCE seq_projetos
     CACHE 1;
 
 
-ALTER TABLE public.seq_projetos OWNER TO kapoeira;
+ALTER TABLE public.seq_projetos OWNER TO postgres;
 
 --
 -- TOC entry 110 (class 1259 OID 244263)
@@ -128,7 +128,7 @@ CREATE TABLE projetos (
 );
 
 
-ALTER TABLE public.projetos OWNER TO kapoeira;
+ALTER TABLE public.projetos OWNER TO postgres;
 
 --
 -- TOC entry 107 (class 1259 OID 244239)
@@ -143,7 +143,7 @@ CREATE SEQUENCE seq_situacao
     CACHE 1;
 
 
-ALTER TABLE public.seq_situacao OWNER TO kapoeira;
+ALTER TABLE public.seq_situacao OWNER TO postgres;
 
 --
 -- TOC entry 108 (class 1259 OID 244256)
@@ -159,7 +159,7 @@ CREATE TABLE situacao (
 );
 
 
-ALTER TABLE public.situacao OWNER TO kapoeira;
+ALTER TABLE public.situacao OWNER TO postgres;
 
 --
 -- TOC entry 1530 (class 2606 OID 244337)

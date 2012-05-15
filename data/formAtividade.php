@@ -9,7 +9,7 @@ $descricao = $esforco = $atividade = "";
 
 if ($acao == 'atualizarAtividade')
 {
-    
+    echo $sql;
     $sql = "SELECT a.codigo, a.descricao AS descricao_atividade, cod_projeto, cod_situacao, esforco, cod_esforco
             FROM atividades a
             INNER JOIN projetos p ON cod_projeto = p.codigo
@@ -52,7 +52,7 @@ foreach ($arraySituacao as $key => $value)
         $combo_situacao .= '<option value="'.$value['codigo'].'" selected>'.$value['descricao'].'</option>';
         $x++;
     }
-    else if ( (isset($atividade)) && ($atividade['cod_situacao'] == $value['codigo']))
+    else if ( (isset($atividade) && isset($atividade['cod_situacao'])) && ($atividade['cod_situacao'] == $value['codigo']))
     {
         $combo_situacao .= '<option value="'.$value['codigo'].'" selected>'.$value['descricao'].'</option>';
     }
@@ -75,7 +75,7 @@ foreach ($arrayEsforco as $key => $value)
         $combo_esforco .= '<option value="'.$value['codigo'].'" selected>'.$value['descricao'].'</option>';
         $x++;
     }
-    else if ( (isset($atividade)) && ($atividade['cod_esforco'] == $value['codigo']))
+    else if ( (isset($atividade)&& isset($atividade['cod_esforco'])) && ($atividade['cod_esforco'] == $value['codigo']))
     {
         $combo_esforco .= '<option value="'.$value['codigo'].'" selected>'.$value['descricao'].'</option>';
     }  
