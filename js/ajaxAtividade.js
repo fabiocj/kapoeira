@@ -92,9 +92,10 @@ jQuery(function ($) {
                     state_s += state;
                     ids += "#" + state + ",";
                     var state_column = create_column(app_data.board, state, app_data.states[state])
-                    table.append(state_column)
+                    table.append(state_column);
             }
-
+            table.append("<br class='clear'/>");
+            
             $(ids, table).dragsort(
             { 
                 dragBetween: true , 
@@ -159,7 +160,7 @@ jQuery(function ($) {
 
             return table;
     }
-    
+ 
     $("#board_link").click(function () {
       var state_data = init_states($("#states").text().split("\n"));
       var app_data = {board: init_board($("#data_output").val().split("\n")), states: state_data.states, states_order: state_data.states_order}

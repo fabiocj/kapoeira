@@ -9,6 +9,7 @@
         <script type='text/javascript' src='js/ajaxAtividade.js'></script>
         <script type='text/javascript' src='js/jquery.contextMenu.js'></script>
         <script type='text/javascript' src='js/jquery.alerts.js'></script>
+        <script type='text/javascript' src='js/jquery-ui-1.8.20.custom.min.js'></script>
         
         <!-- CSS files -->
         <link type='text/css' href='css/ajax.css' rel='stylesheet' media='screen' />
